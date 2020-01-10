@@ -1,4 +1,9 @@
 # 这是我的各种配置文件
+## 如何恢复
+恢复的时候 `rcup -t rcm` 然后再 `rcup`即可恢复全部<br/>
+如果要恢复某个tag, 那么`rcup -t [tag名]`即可<br/>
+例如：`rcup -t zsh` 就会恢复zsh相关的配置文件<br/>
+
 
 ## ranger<br/>
 安装`ranger-git`<br/>
