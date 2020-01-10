@@ -1,6 +1,6 @@
-## 这是我的各种配置文件
+# 这是我的各种配置文件
 
-#### ranger<br/>
+## ranger<br/>
 安装`ranger-git`<br/>
 安装`ueberzug`以进行图片预览<br/>
 安装`poppler`和`Pillow`以进行pdf预览<br/>
