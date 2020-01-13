@@ -103,13 +103,14 @@ do
     BAT="$( acpi -b | awk '{ print $4 }' | tr -d ',' )"
     HDDFREE=$(df -Ph ${hddN} | awk '$3 ~ /[0-9]+/ {print $4}')
     MEMFREE=$(free -h|awk '{print $7}'|awk 'NR==2')
+    VOL=$(amixer get Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')
     if acpi -a | grep off-line > /dev/null
     then
         # 如果没插上电源则显示电池图标
-        xsetroot -name "D:$RX U:$TX CPU:$CPU_USAGE% HDD:$HDDFREE MEM:$MEMFREE 💻:$IP 🔋:$BAT $LOCALTIME"
+        xsetroot -name "D:$RX U:$TX Cpu:$CPU_USAGE% Hdd:$HDDFREE Mem:$MEMFREE Vol:$VOL% 💻:$IP 🔋:$BAT $LOCALTIME"
     else
         # 否则如果插上了电源则显示电线图标
-        xsetroot -name "D:$RX U:$TX CPU:$CPU_USAGE% HDD:$HDDFREE MEM:$MEMFREE 💻:$IP 🔌:$BAT $LOCALTIME"
+        xsetroot -name "D:$RX U:$TX Cpu:$CPU_USAGE% Hdd:$HDDFREE Mem:$MEMFREE Vol:$VOL% 💻:$IP 🔌:$BAT $LOCALTIME"
     fi
 done &
 
