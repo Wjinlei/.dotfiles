@@ -16,6 +16,7 @@
 安装`rar`, `unzip-iconv`, `p7zip`以进行压缩文件预览<br/>
 安装`paramiko`以支持up命令,按键绑定是`P`<br/>
 安装`atool`, `zip`, `p7zip`, `rar`以支持压缩功能, 按键绑定是`C`<br/>
+安装`p7zip`, `unzip-iconv`以支持解压缩功能,按键绑定是`X`<br/>
 
 - 下面以ArchLinux为例:
 ```

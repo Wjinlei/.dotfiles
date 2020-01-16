@@ -189,7 +189,8 @@ class compress(Command):
         extension = ['.zip', '.tar.gz', '.rar', '.7z']
         return ['compress ' + os.path.basename(self.fm.thisdir.path) + ext for ext in extension]
 
-class extracthere(Command):
+class extracthere_bad(Command):
+    "这个方法要先按yy选中文件,才能解压,晕"
     def execute(self):
         """ Extract copied files to current directory """
         copied_files = tuple(self.fm.copy_buffer)
@@ -220,3 +221,26 @@ class extracthere(Command):
         obj.signal_bind('after', refresh)
         self.fm.loader.add(obj)
 
+class extracthere(Command):
+    """
+    采用7z来解压
+    """
+    def execute(self):
+        import os
+        fail=[]
+        for i in self.fm.thistab.get_selection():
+            ExtractProg='7z x'
+            if i.path.endswith('.zip'):
+                # zip encoding issue
+                ExtractProg='unzip -O gbk'
+            elif i.path.endswith('.tar.gz'):
+                ExtractProg='tar xvf'
+            elif i.path.endswith('.tar.xz'):
+                ExtractProg='tar xJvf'
+            elif i.path.endswith('.tar.bz2'):
+                ExtractProg='tar xjvf'
+            if os.system('{0} "{1}"'.format(ExtractProg, i.path)):
+                fail.append(i.path)
+        if len(fail) > 0:
+            self.fm.notify("Fail to extract: {0}".format(' '.join(fail)), duration=10, bad=True)
+        self.fm.redraw_window()
