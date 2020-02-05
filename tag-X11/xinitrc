@@ -9,7 +9,6 @@ export XMODIFIERS="@im=fcitx"
 
 # screen
 xrandr --output HDMI-2 --auto --primary
-xrandr --output eDP-1 --below HDMI-2
 
 # dwm status
 while true
