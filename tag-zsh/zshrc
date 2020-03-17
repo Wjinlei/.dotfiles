@@ -112,7 +112,7 @@ bindkey "," autosuggest-accept
 # alias
 alias ra="ranger"
 alias lg="lazygit"
-alias s="screenfetch"
+alias s="neofetch"
 alias vim="nvim"
 alias m="neomutt"
 
