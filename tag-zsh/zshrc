@@ -112,9 +112,15 @@ bindkey "," autosuggest-accept
 # alias
 alias ra="ranger"
 alias lg="lazygit"
-alias s="neofetch"
 alias vim="nvim"
-alias m="neomutt"
+#alias s="neofetch"
+#alias m="neomutt"
+alias npmi="cnpm install"
+alias npmu="cnpm uninstall"
+alias npmig="cnpm install -g"
+alias npmug="cnpm uninstall -g"
+alias npml="cnpm list --depth=0"
+alias npmlg="cnpm list -g --depth=0"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source /usr/share/nvm/init-nvm.sh
