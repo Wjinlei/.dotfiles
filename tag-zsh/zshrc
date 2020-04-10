@@ -115,12 +115,12 @@ alias lg="lazygit"
 alias vim="nvim"
 #alias s="neofetch"
 #alias m="neomutt"
-alias npmi="cnpm install"
-alias npmu="cnpm uninstall"
-alias npmig="cnpm install -g"
-alias npmug="cnpm uninstall -g"
-alias npml="cnpm list --depth=0"
-alias npmlg="cnpm list -g --depth=0"
+alias npmi="npm --registry=https://registry.npm.taobao.org install"
+alias npmu="npm uninstall"
+alias npmig="npm --registry=https://registry.npm.taobao.org install -g"
+alias npmug="npm uninstall -g"
+alias npml="npm list --depth=0"
+alias npmlg="npm list -g --depth=0"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source /usr/share/nvm/init-nvm.sh
