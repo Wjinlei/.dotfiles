@@ -6,8 +6,8 @@ export GOBIN=$GOPATH/bin
 
 # Pyenv with github
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
-export PYENV_ROOT=$HOME/.pyenv
-if command -v pyenv 1>/dev/null 2>&1; then
+export PYENV_ROOT="$HOME/.pyenv"
+if command -v pyenv >/dev/null 2>&1; then
     eval "$(pyenv init -)"
     eval "$(pyenv virtualenv-init -)"
 fi
@@ -15,9 +15,5 @@ fi
 # ranger
 export RANGER_LOAD_DEFAULT_RC=false
 
-#Ruby
-export RUBY=${HOME}/.gem/ruby/2.7.0
-
 #PATH
-PATH=$HOME/my.scripts:$GOPATH/bin:$PYENV_ROOT/bin:$PATH:$RUBY/bin
-
+PATH="$HOME/my.scripts:$PYENV_ROOT/bin:$GOPATH/bin:$PATH"
