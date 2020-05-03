@@ -2,7 +2,7 @@
 export GO111MODULE=on
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
-#export GOPROXY=https://mirrors.aliyun.com/goproxy/
+export GOPROXY="https://mirrors.aliyun.com/goproxy/"
 
 # Pyenv with github
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
