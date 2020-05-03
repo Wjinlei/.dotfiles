@@ -1,6 +1,6 @@
 #!/bin/bash
 
-hddN="/dev/sda2" # 显示磁盘剩余容量的磁盘
+hddN="/dev/mapper/manjaro-lvo1" # 显示磁盘剩余容量的磁盘
 
 # fcitx
 export GTK_IM_MODULE=fcitx
@@ -112,8 +112,5 @@ do
         xsetroot -name "D:$RX U:$TX Cpu:$CPU_USAGE% Hdd:$HDDFREE Mem:$MEMFREE Vol:$VOL% 💻:$IP 🔌:$BAT $LOCALTIME"
     fi
 done &
-
-# VBox
-VBoxClient-all &
 
 exec dwm
