@@ -3,12 +3,16 @@
 hddN="/dev/mapper/manjaro-lvo1" # 显示磁盘剩余容量的磁盘
 
 # fcitx
-export GTK_IM_MODULE=fcitx
-export QT_IM_MODULE=fcitx
-export XMODIFIERS="@im=fcitx"
+#export GTK_IM_MODULE=fcitx
+#export QT_IM_MODULE=fcitx
+#export XMODIFIERS="@im=fcitx"
+
+export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
 
 # screen
-xrandr --output eDP-1 --same-as HDMI-2 --auto --primary
+xrandr --output DP-2 --below HDMI-0 --auto --primary
 
 # dwm status
 while true
