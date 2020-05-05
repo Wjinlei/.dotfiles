@@ -11,9 +11,6 @@ export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
 
-# screen
-xrandr --output DP-2 --below HDMI-0 --auto --primary
-
 # dwm status
 while true
 do
