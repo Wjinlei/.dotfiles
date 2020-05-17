@@ -98,7 +98,7 @@ do
     fi
 
 
-    LOCALTIME=$(date +'📅:%Y-%m-%d 🕑:%H:%M:%S')
+    LOCALTIME=$(date +'📆:%Y-%m-%d %H:%M:%S')
     IP=$(for i in `ip r`; do echo $i; done | grep -A 1 src | tail -n1) # can get confused if you use vmware
     BAT="$( acpi -b | awk '{ print $4 }' | tr -d ',' )"
     HDDFREE=$(df -Ph ${hddN} | awk '$3 ~ /[0-9]+/ {print $4}')
@@ -107,10 +107,10 @@ do
     if acpi -a | grep off-line > /dev/null
     then
         # 如果没插上电源则显示电池图标
-        xsetroot -name "D:$RX U:$TX Cpu:$CPU_USAGE% Hdd:$HDDFREE Mem:$MEMFREE Vol:$VOL% 💻:$IP 🔋:$BAT $LOCALTIME"
+        xsetroot -name "⏬:$RX ⏫:$TX 🚀:$CPU_USAGE% 💽:$HDDFREE 💾:$MEMFREE 🔈:$VOL% 📶:$IP 🔌:$BAT 🇨🇳:$LOCALTIME"
     else
         # 否则如果插上了电源则显示电线图标
-        xsetroot -name "D:$RX U:$TX Cpu:$CPU_USAGE% Hdd:$HDDFREE Mem:$MEMFREE Vol:$VOL% 💻:$IP 🔌:$BAT $LOCALTIME"
+        xsetroot -name "⏬:$RX ⏫:$TX 🚀:$CPU_USAGE% 💽:$HDDFREE 💾:$MEMFREE 🔊:$VOL% 📶:$IP 🔌:$BAT 🇨🇳:$LOCALTIME"
     fi
 done &
 
