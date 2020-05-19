@@ -107,10 +107,10 @@ do
     if acpi -a | grep off-line > /dev/null
     then
         # 如果没插上电源则显示电池图标
-        xsetroot -name "⏫:$TX ⏬:$RX 🚀:$CPU_USAGE% 💾:$MEMFREE 💽:$HDDFREE 🔊:$VOL% 🔋:$BAT 📶:$IP $LOCALTIME"
+        xsetroot -name "⏫:$TX ⏬:$RX 🚀:$CPU_USAGE% 💾:$MEMFREE 💽:$HDDFREE 🔊:$VOL% 🔌:$BAT 📶:$IP $LOCALTIME"
     else
         # 否则如果插上了电源则显示电线图标
-        xsetroot -name "⏫:$TX ⏬:$RX 🚀:$CPU_USAGE% 💾:$MEMFREE 💽:$HDDFREE 🔊:$VOL% 🔌:$BAT 📶:$IP $LOCALTIME"
+        xsetroot -name "⏫:$TX ⏬:$RX 🚀:$CPU_USAGE% 💾:$MEMFREE 💽:$HDDFREE 🔊:$VOL% ⚡:$BAT 📶:$IP $LOCALTIME"
     fi
 done &
 
