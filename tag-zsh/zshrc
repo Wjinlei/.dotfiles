@@ -109,13 +109,17 @@ source $ZSH/oh-my-zsh.sh
 # bindkey
 bindkey "," autosuggest-accept
 
+
 # alias
 alias ra="ranger"
 alias lg="lazygit"
 alias vim="nvim"
 alias vi="vim"
-alias s="neofetch"
-alias m="neomutt"
+alias mt="neomutt"
+alias mu="ncmpcpp"
+alias os="neofetch"
+
+#npm
 alias npm="npm --registry=https://registry.npm.taobao.org"
 alias npmi="npm install"
 alias npmu="npm uninstall"
