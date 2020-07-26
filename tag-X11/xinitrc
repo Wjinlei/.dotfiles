@@ -13,4 +13,4 @@ mpd &
 
 dunst &
 
-exec dwm
+ssh-agent dwm
