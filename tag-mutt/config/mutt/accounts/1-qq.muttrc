@@ -1,12 +1,12 @@
 # vim: filetype=neomuttrc
-# muttrc file for account qq1976883731
-set realname = "qq1976883731"
+# muttrc file for account qq
+set realname = "qq19768837311"
 set from = "1976883731@qq.com"
-set sendmail = "msmtp -a qq1976883731"
-alias me qq1976883731 <1976883731@qq.com>
-set folder = "/home/wangjl/.local/share/mail/qq1976883731"
-set header_cache = /home/wangjl/.cache/mutt-wizard/qq1976883731/headers
-set message_cachedir = /home/wangjl/.cache/mutt-wizard/qq1976883731/bodies
+set sendmail = "msmtp -a qq"
+alias me qq19768837311 <1976883731@qq.com>
+set folder = "/home/wangjl/.local/share/mail/qq"
+set header_cache = /home/wangjl/.cache/mutt-wizard/qq/headers
+set message_cachedir = /home/wangjl/.cache/mutt-wizard/qq/bodies
 set mbox_type = Maildir
 
 set crypt_autosign = yes
@@ -19,7 +19,7 @@ bind index,pager g noop
 bind index,pager M noop
 bind index,pager C noop
 bind index gg first-entry
-macro index o "<shell-escape>mbsync -V qq1976883731<enter>" "run mbsync to sync qq1976883731"
+macro index o "<shell-escape>mbsync -V qq<enter>" "run mbsync to sync qq"
 unmailboxes *
 
 set spoolfile = "+INBOX"
