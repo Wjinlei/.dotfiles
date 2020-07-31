@@ -119,8 +119,8 @@ source /usr/share/nvm/init-nvm.sh
 bindkey "," autosuggest-accept
 
 # Aliases
-alias vim="nvim"
-alias vi="nvim"
+# Use neovim for vim if present.
+command -v nvim >/dev/null && alias vi="nvim" vim="nvim" vimdiff="nvim -d"
 alias ra="ranger"
 alias lg="lazygit"
 alias mt="neomutt"
