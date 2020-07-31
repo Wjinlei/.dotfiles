@@ -1,0 +1,1 @@
+/home/wangjl/.dotfiles/tag-tmux/config/tmux/tmux-powerline/segments/tmux_mem_cpu_load.sh
