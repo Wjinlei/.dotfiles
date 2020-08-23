@@ -1,1 +1,2 @@
-/home/wangjl/.dotfiles/config/zsh/plugin-settings.zsh
+# Plugins Settings
+bindkey "," autosuggest-accept

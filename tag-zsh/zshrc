@@ -6,12 +6,20 @@ export ZSH="$HOME/.oh-my-zsh"
 #ZSH_THEME="random"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
+plugins=(
+    git
+    history
+    history-substring-search
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    autojump
+)
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 source ~/.config/zsh/p10k.zsh
 source ~/.config/zsh/cursor.zsh
-source ~/.config/zsh/plugins.zsh
 source ~/.config/zsh/plugin-settings.zsh
 source ~/.config/zsh/aliases.zsh
 
