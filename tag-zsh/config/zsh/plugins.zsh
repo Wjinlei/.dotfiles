@@ -1,0 +1,1 @@
+/home/wangjl/.dotfiles/config/zsh/plugins.zsh
