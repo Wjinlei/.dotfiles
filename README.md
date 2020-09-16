@@ -21,4 +21,6 @@ sudo pacman -S atool zip
 pip install ueberzug
 pip install Pillow
 pip install paramiko
+# 安装图标支持插件
+git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
 ```
