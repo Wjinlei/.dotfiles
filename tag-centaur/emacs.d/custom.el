@@ -5,19 +5,19 @@
 ;;; Code:
 
 ;; (setq centaur-logo nil)                        ; Logo file or nil (official logo)
-(setq centaur-full-name "JerryWang")           ; User full name
+(setq centaur-full-name "JerryWang")              ; User full name
 (setq centaur-mail-address "1976883731@qq.com")   ; Email address
 ;; (setq centaur-proxy "127.0.0.1:1080")          ; Network proxy
 ;; (setq centaur-server nil)                      ; Enable `server-mode' or not: t or nil
 ;; (setq centaur-icon nil)                        ; Display icons or not: t or nil
-(setq centaur-package-archives 'melpa)   ; Package repo: melpa, emacs-china, netease, ustc, tencent or tuna
-(setq centaur-theme 'default)                    ; Color theme: auto, random, default, classic, colorful, dark, light, day or night
+(setq centaur-package-archives 'emacs-china)      ; Package repo: melpa, emacs-china, netease, ustc, tencent or tuna
+(setq centaur-theme 'default)                     ; Color theme: auto, random, default, classic, colorful, dark, light, day or night
 ;; (setq centaur-dashboard nil)                   ; Use dashboard at startup or not: t or nil
 ;; (setq centaur-restore-frame-geometry nil)      ; Restore the frame's geometry at startup: t or nil
 ;; (setq centaur-lsp 'eglot)                      ; Set LSP client: lsp-mode, eglot or nil
 ;; (setq centaur-lsp-format-on-save-ignore-modes '(c-mode c++-mode)) ; Ignore format on save for some languages
-(setq centaur-chinese-calendar t)              ; Use Chinese calendar or not: t or nil
-(setq centaur-prettify-symbols-alist nil)      ; Alist of symbol prettifications. Nil to use font supports ligatures.
+(setq centaur-chinese-calendar t)                 ; Use Chinese calendar or not: t or nil
+(setq centaur-prettify-symbols-alist nil)         ; Alist of symbol prettifications. Nil to use font supports ligatures.
 ;; (setq centaur-prettify-org-symbols-alist nil)  ; Alist of symbol prettifications for `org-mode'
 ;; (setq centaur-benchmark-init t)                ; Enable initialization benchmark or not: t or nil
 
@@ -29,22 +29,22 @@
 ;; Fonts
 (when (display-graphic-p)
   ;; Set default font
-  (cl-loop for font in '("UniFont" "SauceCodePro" "SF Mono" "Hack" "Source Code Pro" "Fira Code"
+  (cl-loop for font in '("SF Mono" "Hack" "Source Code Pro" "Fira Code"
                          "Menlo" "Monaco" "DejaVu Sans Mono" "Consolas")
            when (font-installed-p font)
            return (set-face-attribute 'default nil
                                       :font font
                                       :height (cond (sys/mac-x-p 130)
                                                     (sys/win32p 110)
-                                                    (t 120))))
+                                                    (t 100))))
 
   ;; Specify font for all unicode characters
-  (cl-loop for font in '("UniFont" "Apple Color Emoji" "Symbola" "Symbol")
+  (cl-loop for font in '("Apple Color Emoji" "Symbola" "Symbol")
            when (font-installed-p font)
            return(set-fontset-font t 'unicode font nil 'prepend))
 
   ;; Specify font for Chinese characters
-  (cl-loop for font in '("UniFont" "WenQuanYi Micro Hei" "Microsoft Yahei")
+  (cl-loop for font in '("WenQuanYi Micro Hei" "Microsoft Yahei")
            when (font-installed-p font)
            return (set-fontset-font t '(#x4e00 . #x9fff) font)))
 
