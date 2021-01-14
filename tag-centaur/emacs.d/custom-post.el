@@ -30,7 +30,6 @@
   (define-key evil-normal-state-map (kbd "W") 'save-buffer)
 
   (global-set-key [escape] 'evil-exit-emacs-state)
-
   (evil-define-key 'normal help-mode-map
     "q" 'quit-window)
   (evil-define-key 'normal helpful-mode-map
@@ -46,41 +45,16 @@
   (evil-leader/set-key
     "SPC" 'counsel-M-x
 
-    "1"   'winum-select-window-1
-    "2"   'winum-select-window-2
-    "3"   'winum-select-window-3
-    "4"   'winum-select-window-4
-    "5"   'winum-select-window-5
-    "6"   'winum-select-window-6
-    "7"   'winum-select-window-7
-    "8"   'winum-select-window-8
-    "9"   'winum-select-window-9
-    "0"   'treemacs-select-window
-
-    "atl" 'global-command-log-mode
-    "ayl" 'ein:notebooklist-login
-    "ayo" 'ein:notebooklist-open
-    "ayr" 'ein:run
-    "ays" 'ein:stop
     "aoo" 'org-agenda
     "aoa" 'org-agenda-list
     "aoc" 'org-capture
     "aot" 'org-todo-list
-    "am"  'wl
-    "aojj" 'org-journal-new-entry
-    "aojs" 'org-journal-search-forever
-    "aojt" 'org-journal-new-scheduled-entry
-    "aojv" 'org-journal-schedule-view
 
     "bb"  'ivy-switch-buffer
-    "bd"  'kill-this-buffer
+    "bk"  'kill-this-buffer
     "bm"  'bookmark-set
     "bj"  'bookmark-jump
-    "bI"  'ibuffer
-    "bp"  'previous-buffer
-    "bn"  'next-buffer
-    "bt"  'imenu-list-smart-toggle
-    "bs"  'switch-to-scratch-buffer
+    "bd"  'bookmark-delete
 
     "ff"  'counsel-find-file
     "fj"  'dired-jump
@@ -89,7 +63,6 @@
     "fE"  'sudo-edit
     "fd"  'delete-this-file
     "ft"  'treemacs
-    "fo"  'open-file-or-directory-in-external-app
     "fr"  'counsel-recentf
     "fR"  'rename-this-file
     "fs"  'save-buffer
@@ -136,30 +109,15 @@
     "px"  'projectile-remove-known-project
     "pz"  'projectile-cache-current-file
 
-    "Pc"  'password-store-copy
-    "Pg"  'password-store-generate
-    "Pr"  'password-store-remove
-    "Pe"  'password-store-edit
-    "PR"  'password-store-rename
-    "Pi"  'password-store-insert
-    "Pu"  'password-store-url
-
     "sa"  'mark-whole-buffer
     "sp"  'projectile-ripgrep
     "ss"  'swiper
-    "sn"  'snails
 
-    "te"  'toggle-company-english-helper
-    "tg"  'go-translate
-    "tp"  'go-translate-popup
-    "tt"  'insert-translated-name-insert
     "tl"  'toggle-truncate-lines
     "tw"  'toggle-frame-maximized
     "tf"  'toggle-frame-fullscreen
-    "th"  'english-teacher-follow-mode
 
     "ww"  'other-window
-    "wm"  'toggle-maximize-buffer
     "wo"  'other-frame
     "w/"  'split-window-right
     "w-"  'split-window-below
@@ -181,10 +139,7 @@
     "u"   'downcase-word
     "U"   'upcase-word
 
-    "yp"  'youdao-dictionary-search-at-point-posframe
-    "yi"  'youdao-dictionary-search-from-input
-    "yv"  'youdao-dictionary-play-voice-at-point
-    "ys"  'youdao-dictionary-play-voice-from-input
+    "oy"  'youdao-dictionary-search-at-point
 
     "qq"  'save-buffers-kill-terminal
 
