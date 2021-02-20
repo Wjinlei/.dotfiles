@@ -17,3 +17,4 @@ alias npmig="npm install -g"
 alias npmug="npm uninstall -g"
 alias npml="npm list --depth=0"
 alias npmlg="npm list -g --depth=0"
+alias ls='ls --color=tty -X'
