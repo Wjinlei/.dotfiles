@@ -51,6 +51,21 @@
   (define-key evil-normal-state-map (kbd "C-h") 'evil-first-non-blank)
   (define-key evil-normal-state-map (kbd "C-l") 'evil-end-of-line))
 
+(use-package evil-leader
+  :ensure t
+  :config
+  (setq evil-leader/in-all-states 1)
+  (evil-leader/set-leader "<SPC>")
+  (evil-leader/set-key
+    "/"  'vterm
+    "lg" 'magit
+    "kb" 'kill-buffer
+    "ff" 'find-file
+    "fr" 'counsel-recentf
+    "fd" 'counsel-dired
+    "bb" 'ido-switch-buffer))
+(global-evil-leader-mode)
+
 (provide 'init-evil)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; init-highlight.el ends here
