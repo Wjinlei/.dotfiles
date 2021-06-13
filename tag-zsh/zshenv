@@ -2,13 +2,15 @@
 export PATH="$HOME/my.scripts:$PATH"
 
 # rust
-export PATH="$HOME/.cargo/bin:$PATH"
+#export PATH="$HOME/.cargo/bin:$PATH"
 
 # golang
 export GO111MODULE=on
+export GOROOT="$HOME/.local/go"
+export GOBIN="$GOROOT/bin"
 export GOPATH="$HOME/my.codes/go"
-export GOBIN="$GOPATH/bin"
-export PATH="$GOPATH/bin:$PATH"
+export PATH="$GOROOT/bin:$PATH"
+export GOPROXY="https://goproxy.io,direct"
 
 # Pyenv with github
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1

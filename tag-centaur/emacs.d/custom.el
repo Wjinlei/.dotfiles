@@ -11,7 +11,7 @@
 ;; (setq centaur-server nil)                      ; Enable `server-mode' or not: t or nil
 ;; (setq centaur-icon nil)                        ; Display icons or not: t or nil
 (setq centaur-package-archives 'melpa)            ; Package repo: melpa, emacs-china, netease, ustc, tencent or tuna
-(setq centaur-theme 'doom-monokai-classic)        ; Color theme: auto, random, system, default, pro, dark, light, warm, cold, day or night
+(setq centaur-theme 'doom-snazzy)        ; Color theme: auto, random, system, default, pro, dark, light, warm, cold, day or night
 ;; (setq centaur-completion-style 'childframe)    ; Completion display style: minibuffer or childframe
 (setq centaur-dashboard nil)                      ; Use dashboard at startup or not: t or nil
 ;; (setq centaur-restore-frame-geometry nil)      ; Restore the frame's geometry at startup: t or nil
@@ -20,6 +20,9 @@
 (setq centaur-chinese-calendar t)                 ; Use Chinese calendar or not: t or nil
 (setq centaur-prettify-symbols-alist nil)         ; Alist of symbol prettifications. Nil to use font supports ligatures.
 ;; (setq centaur-prettify-org-symbols-alist nil)  ; Alist of symbol prettifications for `org-mode'
+
+;; Fix install package error
+(setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
 
 ;; For Emacs devel
 ;; (setq package-user-dir (locate-user-emacs-file (format "elpa-%s" emacs-major-version)))
