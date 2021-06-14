@@ -15,11 +15,11 @@ export GOPROXY="https://goproxy.io,direct"
 # Pyenv with github
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 export PYENV_ROOT="$HOME/.pyenv"
-if command -v pyenv >/dev/null 2>&1; then
-    eval "$(pyenv init -)"
-    eval "$(pyenv virtualenv-init -)"
-fi
 export PATH="$PYENV_ROOT/bin:$PATH"
+if command -v pyenv >/dev/null 2>&1; then
+    eval "$(pyenv init --path)"
+    eval "$(pyenv virtualenv-init --path)"
+fi
 
 # ranger
 export RANGER_LOAD_DEFAULT_RC=false
