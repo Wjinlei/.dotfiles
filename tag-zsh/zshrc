@@ -24,8 +24,8 @@ source ~/.config/zsh/plugin-settings.zsh
 source ~/.config/zsh/aliases.zsh
 
 # Nvm
-if [ -f /usr/share/nvm/init-nvm.sh ];then
-    source /usr/share/nvm/init-nvm.sh
+if [ -f /usr/local/nvm/init-nvm.sh ];then
+    source /usr/local/nvm/init-nvm.sh
 fi
 
 # Fzf
