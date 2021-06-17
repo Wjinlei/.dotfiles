@@ -10,8 +10,8 @@
 ;; (setq centaur-proxy "127.0.0.1:1080")          ; Network proxy
 ;; (setq centaur-server nil)                      ; Enable `server-mode' or not: t or nil
 ;; (setq centaur-icon nil)                        ; Display icons or not: t or nil
-(setq centaur-package-archives 'tencent)            ; Package repo: melpa, emacs-china, netease, ustc, tencent or tuna
-(setq centaur-theme 'doom-snazzy)        ; Color theme: auto, random, system, default, pro, dark, light, warm, cold, day or night
+(setq centaur-package-archives 'emacs-china)            ; Package repo: melpa, emacs-china, netease, ustc, tencent or tuna
+(setq centaur-theme 'doom-monokai-classic)        ; Color theme: auto, random, system, default, pro, dark, light, warm, cold, day or night
 ;; (setq centaur-completion-style 'childframe)    ; Completion display style: minibuffer or childframe
 (setq centaur-dashboard nil)                      ; Use dashboard at startup or not: t or nil
 ;; (setq centaur-restore-frame-geometry nil)      ; Restore the frame's geometry at startup: t or nil
@@ -32,14 +32,14 @@
 ;; Fonts
 (when (display-graphic-p)
   ;; Set default font
-  (cl-loop for font in '("Mononoki Nerd Font Mono" "SF Mono" "Hack" "Source Code Pro" "Fira Code"
+  (cl-loop for font in '("FiraCode Nerd Font Mono" "Mononoki Nerd Font Mono" "SF Mono" "Hack" "Source Code Pro" "Fira Code"
                          "Menlo" "Monaco" "DejaVu Sans Mono" "Consolas")
            when (font-installed-p font)
            return (set-face-attribute 'default nil
                                       :font font
                                       :height (cond (sys/mac-x-p 130)
                                                     (sys/win32p 110)
-                                                    (t 130))))
+                                                    (t 150))))
 
   ;; Specify font for all unicode characters
   (cl-loop for font in '("Apple Color Emoji" "Segoe UI Symbol" "Symbola" "Symbol")
