@@ -1,3 +1,6 @@
+# local bin
+export PATH="$HOME/.local/bin:$PATH"
+
 # my.scripts
 export PATH="$HOME/my.scripts:$PATH"
 
