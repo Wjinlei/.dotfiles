@@ -2,7 +2,7 @@
 export PATH="$HOME/my.scripts:$PATH"
 
 # rust
-#export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # golang
 export GO111MODULE=on
