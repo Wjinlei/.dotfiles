@@ -5,11 +5,11 @@
 - [ ] 安装`rcm`
 
 ### 你可能需要
-- Ranger
+- Ranger `pip3 install ranger-fm`
 - [ ] 安装`w3m`
 - [ ] 安装`feh`
 - [ ] 安装`highlight`
-- [ ] pip3,安装`ueberzug`
+- [ ] 安装`ueberzug(pip3)`
 - [ ] 安装`poppler`,`poppler-utils`
 - [ ] 安装`ffmpegthumbnailer`
 - [ ] 安装`imagemagick`
