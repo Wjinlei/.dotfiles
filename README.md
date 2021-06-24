@@ -10,7 +10,7 @@
 - [ ] 安装`feh`
 - [ ] 安装`highlight`
 - [ ] 安装`ueberzug(pip3)`
-- [ ] 安装`poppler`,`poppler-utils`
+- [ ] 安装`poppler` or `poppler-utils`
 - [ ] 安装`ffmpegthumbnailer`
 - [ ] 安装`imagemagick`
 - [ ] 安装`atool`,`zip`,`rar`,`unzip-iconv`,`p7zip`
