@@ -9,7 +9,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 # golang
 export GO111MODULE=on
-export GOROOT="$HOME/.local/go"
+export GOROOT="/usr/local/go"
 export GOBIN="$GOROOT/bin"
 export GOPATH="$HOME/my.codes/go"
 export PATH="$GOROOT/bin:$PATH"
