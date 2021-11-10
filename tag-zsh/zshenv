@@ -1,25 +1,17 @@
-# local bin
-export PATH="$HOME/.local/bin:$PATH"
-
-# my.scripts
-export PATH="$HOME/my.scripts:$PATH"
-
-# java
+# Language
+# Java
 export JAVA_HOME="/usr/local/jdk1.8.0_301"
 export PATH="$JAVA_HOME/bin:$PATH"
 export CLASSPATH=".:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar"
-
-# rust
+# Rust
 export PATH="$HOME/.cargo/bin:$PATH"
-
-# golang
+# Golang
 export GO111MODULE=on
 export GOROOT="/usr/local/go"
 export GOBIN="$GOROOT/bin"
 export GOPATH="$HOME/my.codes/go"
 export PATH="$GOROOT/bin:$PATH"
 export GOPROXY="https://goproxy.io,direct"
-
 # Pyenv with github
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 export PYENV_ROOT="$HOME/.pyenv"
@@ -29,10 +21,10 @@ if command -v pyenv >/dev/null 2>&1; then
     eval "$(pyenv virtualenv-init -)"
 fi
 
-# ranger
-export RANGER_LOAD_DEFAULT_RC=false
+# Custom
+export PATH="$XDG_STATE_HOME/bin:$PATH"
+export PATH="$HOME/my.scripts:$PATH"
 
 # Default programs:
-export EDITOR="nvim"
-export TERMINAL="st"
-export BROWSER="google-chrome-stable"
+export PATH="/usr/local/nvim-linux64/bin:$PATH"
+export RANGER_LOAD_DEFAULT_RC=false

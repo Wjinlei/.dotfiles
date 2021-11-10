@@ -1,10 +1,10 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
 #ZSH_THEME="ys"
 #ZSH_THEME="random"
-#ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(
     git
@@ -18,17 +18,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-source ~/.config/zsh/p10k.zsh
-source ~/.config/zsh/cursor.zsh
-source ~/.config/zsh/plugin-settings.zsh
-source ~/.config/zsh/aliases.zsh
-
-# Nvm
-if [ -f /usr/local/nvm/init-nvm.sh ];then
-    source /usr/local/nvm/init-nvm.sh
-fi
-
-# Fzf
-if [ -f ~/.fzf.zsh ];then
-    source ~/.fzf.zsh
-fi
+source ${XDG_CONFIG_HOME}/zsh/aliases.zsh
+source ${XDG_CONFIG_HOME}/zsh/plugin-settings.zsh
+source ${XDG_CONFIG_HOME}/zsh/cursor.zsh
+source ${XDG_CONFIG_HOME}/zsh/p10k.zsh

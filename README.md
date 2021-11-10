@@ -2,7 +2,8 @@
 - 这是我的各种配置文件,它使用`rcm`来管理<br/>
 
 ### 使用前,您需要
-- [ ] 安装`rcm`
+- [x] mv `xdg-define.sh` to `/etc/profile.d/`
+- [x] 安装`rcm`
 
 ### 你可能需要
 - Ranger `pip3 install ranger-fm`
