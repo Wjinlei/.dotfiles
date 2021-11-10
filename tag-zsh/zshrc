@@ -18,7 +18,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-source ${XDG_CONFIG_HOME}/zsh/aliases.zsh
-source ${XDG_CONFIG_HOME}/zsh/plugin-settings.zsh
-source ${XDG_CONFIG_HOME}/zsh/cursor.zsh
-source ${XDG_CONFIG_HOME}/zsh/p10k.zsh
+source ${HOME}/.config/zsh/aliases.zsh
+source ${HOME}/.config/zsh/plugin-settings.zsh
+source ${HOME}/.config/zsh/cursor.zsh
+source ${HOME}/.config/zsh/p10k.zsh
