@@ -1,2 +1,2 @@
-TAGS="rcm albert centaur compton dunst fontconfig git i3 mpd picom python ranger rofi tmux X11 zsh"
+TAGS="rcm albert compton dunst fontconfig i3 mpd picom python ranger rofi tmux X11 zsh"
 EXCLUDES="README.md"
