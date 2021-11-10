@@ -1,19 +1,20 @@
-### 介绍
-- 这是我的各种配置文件,它使用`rcm`来管理<br/>
+### Overview
+- This is my `dotfile`,it uses rcm to manage<br/>
 
-### 使用前,您需要
-- [x] mv `xdg-define.sh` to `/etc/profile.d/`
-- [x] 安装`rcm`
+### Before use, you need
+- [x] mv `xdg-define.sh` to `/etc/profile.d/` and `reboot` your system.
+- [x] Install `rcm`
 
-### 你可能需要
+### If using ranger
 - Ranger `pip3 install ranger-fm`
-- [ ] 安装`w3m`
-- [ ] 安装`feh`
-- [ ] 安装`highlight`
-- [ ] 安装`ueberzug(pip3)`
-- [ ] 安装`poppler` or `poppler-utils`
-- [ ] 安装`ffmpegthumbnailer`
-- [ ] 安装`imagemagick`
-- [ ] 安装`atool`,`zip`,`rar`,`unzip-iconv`,`p7zip`
+- [x] Install `w3m`
+- [x] Install `feh`
+- [x] Install `highlight`
+- [x] Install `ueberzug(pip3)`
+- [x] Install `poppler` or `poppler-utils`
+- [x] Install `ffmpegthumbnailer`
+- [x] Install `imagemagick`
+- [x] Install `atool`,`zip`,`rar`,`unzip-iconv`,`p7zip`
+
 - 如果安装后还不能预览图片,那应该是你的终端不支持
 - https://github.com/ranger/ranger/wiki/Image-Previews
