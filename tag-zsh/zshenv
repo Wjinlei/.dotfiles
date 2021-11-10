@@ -28,3 +28,4 @@ export PATH="$HOME/my.scripts:$PATH"
 # Default programs:
 export PATH="/usr/local/nvim-linux64/bin:$PATH"
 export RANGER_LOAD_DEFAULT_RC=false
+export ZSH_COMPDUMP="$XDG_CACHE_HOME/.zcompdump-${SHORT_HOST}-${ZSH_VERSION}"
