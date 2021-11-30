@@ -1,0 +1,55 @@
+" __  ____   __  _   ___     _____ __  __ ____   ____
+"|  \/  \ \ / / | \ | \ \   / /_ _|  \/  |  _ \ / ___|
+"| |\/| |\ V /  |  \| |\ \ / / | || |\/| | |_) | |
+"| |  | | | |   | |\  | \ V /  | || |  | |  _ <| |___
+"|_|  |_| |_|   |_| \_|  \_/  |___|_|  |_|_| \_\\____|
+
+" Author: fock of @theniceboy with my private modifiactons
+
+" ===
+" === Necessary Commands to Execute
+" ===
+exec "nohlsearch"
+
+
+" ====================
+" === Editor Setup ===
+" ====================
+
+" ===
+" === Basic Mappings
+" ===
+" Save & quit
+noremap q :q!<CR>
+noremap Q :qa!<CR>
+noremap w :w!<CR>
+noremap W :w!<CR>
+
+" Back normal mode
+inoremap jj <Esc>
+inoremap JJ <Esc>
+
+" ===
+" === Cursor Movement
+" ===
+noremap <silent> K 5k
+noremap <silent> J 5j
+noremap <silent> H b
+noremap <silent> L w
+noremap <silent> <C-h> ^
+noremap <silent> <C-l> $
+
+
+" ===
+" === Window management
+" ===
+" Disable the default s key
+noremap s <nop>
+" split the screens to up (horizontal), down (horizontal), left (vertical), right (vertical)
+noremap sph :split<CR>
+noremap spv :vsplit<CR>
+" moving the cursor around windows
+noremap sk <C-w>k
+noremap sj <C-w>j
+noremap sh <C-w>h
+noremap sl <C-w>l
