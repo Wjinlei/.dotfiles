@@ -1,8 +1,4 @@
 # Language
-# Java
-export JAVA_HOME="/usr/local/jdk1.8.0_301"
-export PATH="$JAVA_HOME/bin:$PATH"
-export CLASSPATH=".:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar"
 # Rust
 export PATH="$HOME/.cargo/bin:$PATH"
 # Golang
@@ -19,6 +15,16 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 if command -v pyenv >/dev/null 2>&1; then
     eval "$(pyenv init --path)"
     eval "$(pyenv virtualenv-init -)"
+fi
+# Java
+export JAVA_HOME="/usr/local/jdk1.8.0_311"
+export PATH="$JAVA_HOME/bin:$PATH"
+export M2_HOME="/usr/local/apache-maven-3.8.3"
+export PATH="$M2_HOME/bin:$PATH"
+# Jenv
+export PATH="$HOME/.jenv/bin:$PATH"
+if command -v jenv >/dev/null 2>&1; then
+    eval "$(jenv init -)"
 fi
 
 # Custom
