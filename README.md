@@ -2,7 +2,6 @@
 - This is my `dotfile`,it uses rcm to manage<br/>
 
 ### Before use, you need
-- [x] mv `xdg-define.sh` to `/etc/profile.d/` and `reboot` your system.
 - [x] Install `rcm`
 
 ### If using ranger
