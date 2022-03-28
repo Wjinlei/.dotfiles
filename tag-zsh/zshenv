@@ -1,13 +1,8 @@
 # Language
-# Rust
-export PATH="$HOME/.cargo/bin:$PATH"
 # Golang
 export GO111MODULE=on
-export GOROOT="/usr/local/go"
-export GOBIN="$GOROOT/bin"
-export GOPATH="$HOME/my.codes/go"
-export PATH="$GOROOT/bin:$PATH"
 export GOPROXY="https://goproxy.io,direct"
+
 # Pyenv with github
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 export PYENV_ROOT="$HOME/.pyenv"
@@ -16,21 +11,21 @@ if command -v pyenv >/dev/null 2>&1; then
     eval "$(pyenv init --path)"
     eval "$(pyenv virtualenv-init -)"
 fi
+
 # Java
-export JAVA_HOME="/usr/local/jdk1.8.0_311"
-export PATH="$JAVA_HOME/bin:$PATH"
-export M2_HOME="/usr/local/apache-maven-3.8.3"
-export PATH="$M2_HOME/bin:$PATH"
+#export JAVA_HOME="/usr/local/jdk1.8.0_311"
+#export PATH="$JAVA_HOME/bin:$PATH"
+#export M2_HOME="/usr/local/apache-maven-3.8.3"
+#export PATH="$M2_HOME/bin:$PATH"
 # Jenv
-export PATH="$HOME/.jenv/bin:$PATH"
-if command -v jenv >/dev/null 2>&1; then
-    eval "$(jenv init -)"
-fi
+#export PATH="$HOME/.jenv/bin:$PATH"
+#if command -v jenv >/dev/null 2>&1; then
+#    eval "$(jenv init -)"
+#fi
 
 # Custom
-export PATH="$HOME/my.scripts:$PATH"
+export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/bin/shell:$PATH"
 
 # Default programs:
-export ZSH_COMPDUMP="$HOME/.cache/.zcompdump-$ZSH_VERSION"
-export PATH="/usr/local/nvim-linux64/bin:$PATH"
 export RANGER_LOAD_DEFAULT_RC=false

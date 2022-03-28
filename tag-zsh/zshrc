@@ -22,3 +22,8 @@ source ${HOME}/.config/zsh/aliases.zsh
 source ${HOME}/.config/zsh/plugin-settings.zsh
 source ${HOME}/.config/zsh/cursor.zsh
 source ${HOME}/.config/zsh/p10k.zsh
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
