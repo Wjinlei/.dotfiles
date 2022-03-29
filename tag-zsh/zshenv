@@ -23,6 +23,10 @@ fi
 #    eval "$(jenv init -)"
 #fi
 
+# dwm script
+export TERMINAL="st"
+export EDITOR="nvim"
+
 # Custom
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/bin/shell:$PATH"
@@ -30,3 +34,4 @@ export PATH="$HOME/bin/dwm.script:$PATH"
 
 # Default programs:
 export RANGER_LOAD_DEFAULT_RC=false
+

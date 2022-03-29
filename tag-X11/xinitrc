@@ -1,13 +1,4 @@
 #!/bin/bash
-
-# fcitx
-export INPUT_METHOD=fcitx
-export GTK_IM_MODULE=fcitx
-export QT_IM_MODULE=fcitx
-export XMODIFIERS=\@im=fcitx
-
 mpd &
-
 dunst &
-
-ssh-agent dwm
+exec dwm
