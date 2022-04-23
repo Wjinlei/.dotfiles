@@ -1,5 +1,5 @@
 ### Overview
-- This is my `dotfile`,it uses rcm to manage<br/>
+This is my `dotfile`,it uses rcm to manage<br/>
 
 ### Before use, you need
 - [x] Install `rcm`
@@ -16,6 +16,6 @@
 - [x] Install `ffmpegthumbnailer`
 - [x] Install `imagemagick`
 
-
+### FAQ
 - 如果安装后还不能预览图片,那应该是你的终端不支持
 - https://github.com/ranger/ranger/wiki/Image-Previews
