@@ -82,7 +82,7 @@
     #icon = /path/to/icon
 
 [urgency_normal]
-    background = "#458588"
+    background = "#282a36"
     foreground = "#ebdbb2"
     timeout = 5
 
