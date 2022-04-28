@@ -17,7 +17,11 @@ ZSH_THEME="crunch"
 #ZSH_THEME="jonathan"
 #ZSH_THEME="obraun"
 
+# zsh-vi-mode
+[ -f ~/.config/zsh/zsh-vi-mode.zsh ] && source ~/.config/zsh/zsh-vi-mode.zsh
+
 plugins=(
+    zsh-vi-mode
     git
     history
     history-substring-search
@@ -27,12 +31,6 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-
-# User configuration
-[[ ! -f ~/.config/zsh/p10k.zsh ]] || source ~/.config/zsh/p10k.zsh
-[[ ! -f ~/.config/zsh/cursor.zsh ]] || source ~/.config/zsh/cursor.zsh
-[[ ! -f ~/.config/zsh/plugin-settings.zsh ]] || source ~/.config/zsh/plugin-settings.zsh
-[[ ! -f ~/.config/zsh/aliases.zsh ]] || source ~/.config/zsh/aliases.zsh
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
