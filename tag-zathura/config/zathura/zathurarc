@@ -4,6 +4,12 @@ set statusbar-v-padding 0
 set page-padding 1
 set selection-clipboard clipboard
 
+# tab 书签
+# + - 调整大小
+# c 复制链接
+# f 跟踪链接
+# s 适应屏幕
+
 map D toggle_page_mode
 map r reload
 map R rotate
