@@ -1,0 +1,26 @@
+# vim: filetype=neomuttrc
+# muttrc file for account wjinlei.1996@qq.com
+set realname = "wjinlei.1996"
+set from = "wjinlei.1996@qq.com"
+set sendmail = "msmtp -a wjinlei.1996@qq.com"
+alias me wjinlei.1996 <wjinlei.1996@qq.com>
+set folder = "/home/w/.local/share/mail/wjinlei.1996@qq.com"
+set header_cache = /home/w/.cache/mutt-wizard/wjinlei.1996@qq.com/headers
+set message_cachedir = /home/w/.cache/mutt-wizard/wjinlei.1996@qq.com/bodies
+set mbox_type = Maildir
+set hostname = "qq.com"
+source /usr/local/share/mutt-wizard/switch.muttrc
+set spoolfile = +INBOX
+set postponed = +Drafts
+set trash = "+Deleted Messages"
+set record = "+Sent Messages"
+
+macro index o "<shell-escape>mw -y wjinlei.1996@qq.com<enter>" "run mbsync to sync wjinlei.1996@qq.com"
+macro index,pager gi "<change-folder>=INBOX<enter>"
+macro index,pager GI "<change-folder>=INBOX<enter>"
+macro index,pager gs "<change-folder>=Sent Messages<enter>"
+macro index,pager GS "<change-folder>=Sent Messages<enter>"
+macro index,pager gt "<change-folder>=Deleted Messages<enter>"
+macro index,pager GT "<change-folder>=Deleted Messages<enter>"
+
+mailboxes "=INBOX" "=Sent Messages" "=Drafts" "=Deleted Messages" "=Junk"
