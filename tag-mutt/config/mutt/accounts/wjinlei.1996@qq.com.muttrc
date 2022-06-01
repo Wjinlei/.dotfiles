@@ -4,12 +4,12 @@ set realname = "wjinlei.1996"
 set from = "wjinlei.1996@qq.com"
 set sendmail = "msmtp -a wjinlei.1996@qq.com"
 alias me wjinlei.1996 <wjinlei.1996@qq.com>
-set folder = "/home/w/.local/share/mail/wjinlei.1996@qq.com"
-set header_cache = /home/w/.cache/mutt-wizard/wjinlei.1996@qq.com/headers
-set message_cachedir = /home/w/.cache/mutt-wizard/wjinlei.1996@qq.com/bodies
+set folder = "~/.local/share/mail/wjinlei.1996@qq.com"
+set header_cache = ~/.cache/mutt-wizard/wjinlei.1996@qq.com/headers
+set message_cachedir = ~/.cache/mutt-wizard/wjinlei.1996@qq.com/bodies
 set mbox_type = Maildir
 set hostname = "qq.com"
-source /usr/local/share/mutt-wizard/switch.muttrc
+source ~/.config/mutt/switch.muttrc
 set spoolfile = +INBOX
 set postponed = +Drafts
 set trash = "+Deleted Messages"
