@@ -4,12 +4,12 @@ set realname = "freebufer.wang"
 set from = "freebufer.wang@gmail.com"
 set sendmail = "msmtp -a freebufer.wang@gmail.com"
 alias me freebufer.wang <freebufer.wang@gmail.com>
-set folder = "~/.local/share/mail/freebufer.wang@gmail.com"
-set header_cache = ~/.cache/mutt-wizard/freebufer.wang@gmail.com/headers
-set message_cachedir = ~/.cache/mutt-wizard/freebufer.wang@gmail.com/bodies
+set folder = $HOME/.local/share/mail/freebufer.wang@gmail.com
+set header_cache = $HOME/.cache/mutt/freebufer.wang@gmail.com/headers
+set message_cachedir = $HOME/.cache/mutt/freebufer.wang@gmail.com/bodies
 set mbox_type = Maildir
 set hostname = "gmail.com"
-source ~/.config/mutt/switch.muttrc
+source $HOME/.config/mutt/switch.muttrc
 set spoolfile = +INBOX
 set postponed = +Drafts
 set trash = "+[Gmail]/Trash"

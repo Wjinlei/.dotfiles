@@ -1,9 +1,9 @@
 text/plain; $EDITOR %s ;
-text/html; ~/.config/mutt/openfile %s ; nametemplate=%s.html
+text/html; $HOME/.config/mutt/openfile %s ; nametemplate=%s.html
 text/html; lynx -assume_charset=%{charset} -display_charset=utf-8 -dump -width=1024 %s; nametemplate=%s.html; copiousoutput;
-image/*; ~/.config/mutt/openfile %s ;
+image/*; $HOME/.config/mutt/openfile %s ;
 video/*; setsid mpv --quiet %s &; copiousoutput
 audio/*; mpv %s ;
-application/pdf; ~/.config/mutt/openfile %s ;
+application/pdf; $HOME/.config/mutt/openfile %s ;
 application/pgp-encrypted; gpg -d '%s'; copiousoutput;
 application/pgp-keys; gpg --import '%s'; copiousoutput;

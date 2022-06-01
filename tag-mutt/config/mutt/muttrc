@@ -1,6 +1,6 @@
 # vim: filetype=neomuttrc
 
-source ~/.config/mutt/mutt-wizard.muttrc
-source ~/.config/mutt/accounts/freebufer.wang@gmail.com.muttrc
+source $HOME/.config/mutt/mutt-wizard.muttrc
+source $HOME/.config/mutt/accounts/freebufer.wang@gmail.com.muttrc
 macro index,pager i1 '<sync-mailbox><enter-command>source /home/w/.config/mutt/accounts/freebufer.wang@gmail.com.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to freebufer.wang@gmail.com"
 macro index,pager i2 '<sync-mailbox><enter-command>source /home/w/.config/mutt/accounts/wjinlei.1996@qq.com.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to wjinlei.1996@qq.com"
