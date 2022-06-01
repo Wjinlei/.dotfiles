@@ -35,6 +35,7 @@ export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/bin/shell:$PATH"
 export PATH="$HOME/bin/dwm.script:$PATH"
 export PATH="$HOME/bin/rainbarf:$PATH"
+export PATH="$HOME/bin/install:$PATH"
 
 # Default programs:
 export RANGER_LOAD_DEFAULT_RC=false
