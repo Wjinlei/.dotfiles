@@ -1,6 +1,6 @@
 account freebufer.wang@gmail.com
 host smtp.gmail.com
-port 587
+port 465
 from freebufer.wang@gmail.com
 user freebufer.wang@gmail.com
 passwordeval "pass freebufer.wang@gmail.com"
@@ -8,11 +8,11 @@ auth on
 tls on
 tls_trust_file	/etc/ssl/certs/ca-certificates.crt
 logfile /home/w/.config/msmtp/msmtp.log
-# tls_starttls
+tls_starttls off
 
 account wjinlei.1996@qq.com
 host smtp.qq.com
-port 587
+port 465
 from wjinlei.1996@qq.com
 user wjinlei.1996@qq.com
 passwordeval "pass wjinlei.1996@qq.com"
@@ -20,5 +20,5 @@ auth on
 tls on
 tls_trust_file	/etc/ssl/certs/ca-certificates.crt
 logfile /home/w/.config/msmtp/msmtp.log
-# tls_starttls
+tls_starttls off
 
