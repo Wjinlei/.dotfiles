@@ -3,12 +3,10 @@
 command -v nvim >/dev/null && alias vi="nvim" vim="nvim" vimdiff="nvim -d"
 
 # main
-alias ls='ls --color=tty -X'
+alias mt="mutt"
 alias os="neofetch"
-alias ra="ranger"
 alias lg="lazygit"
-alias mt="neomutt"
-alias mu="ncmpcpp"
+alias ra="ranger"
 
 # npm
 alias tbnpm="npm --registry=https://registry.npm.taobao.org"
