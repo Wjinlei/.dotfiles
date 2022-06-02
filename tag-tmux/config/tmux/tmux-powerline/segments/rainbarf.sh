@@ -8,7 +8,7 @@ run_segment() {
 	fi
 
     # Customize via ~/.rainbarf.conf
-	stats=$(rainbarf --tmux)
+	stats=$(rainbarf --tmux --datfile=${XDG_CACHE_HOME:-$HOME/.cache}/.rainbarf.dat)
 	if [ -n "$stats" ]; then
 		echo "$stats";
 	fi
