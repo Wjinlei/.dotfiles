@@ -26,7 +26,8 @@ fi
 #    eval "$(jenv init -)"
 #fi
 
-export LESSHISTFILE="$HOME"/.cache/.lesshst
+export XAUTHORITY=${XDG_CACHE_HOME:-$HOME/.cache}/.Xauthority
+export LESSHISTFILE=${XDG_CACHE_HOME:-$HOME/.cache}/.lesshst
 
 # dwm script
 export TERMINAL="st"
@@ -41,4 +42,3 @@ export PATH="$HOME/.bin/install:$PATH"
 
 # Default programs:
 export RANGER_LOAD_DEFAULT_RC=false
-
