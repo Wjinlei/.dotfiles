@@ -26,10 +26,11 @@ fi
 #    eval "$(jenv init -)"
 #fi
 
+export npm_config_cache=${XDG_CACHE_HOME:-$HOME/.cache}/.npm
 export XAUTHORITY=${XDG_CACHE_HOME:-$HOME/.cache}/.Xauthority
 export LESSHISTFILE=${XDG_CACHE_HOME:-$HOME/.cache}/.lesshst
 
-# dwm script
+# DWM script
 export TERMINAL="st"
 export EDITOR="nvim"
 
