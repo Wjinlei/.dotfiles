@@ -3,6 +3,7 @@
 command -v nvim >/dev/null && alias vi="nvim" vim="nvim" vimdiff="nvim -d"
 
 # main
+alias ls="ls --color -X"
 alias mt="mutt"
 alias os="neofetch"
 alias lg="lazygit"
