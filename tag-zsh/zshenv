@@ -26,6 +26,8 @@ fi
 #    eval "$(jenv init -)"
 #fi
 
+export LESSHISTFILE="$HOME"/.cache/.lesshst
+
 # dwm script
 export TERMINAL="st"
 export EDITOR="nvim"
