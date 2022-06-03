@@ -1,0 +1,49 @@
+#!/bin/bash
+
+# Require NetworkManager
+
+list(){
+        nmcli device wifi list
+}
+
+new(){
+        if [ $# -lt 2 ]; then
+                printf "Usage: $0 -new SSID password"
+                exit 1
+        fi
+        nmcli device wifi connect $1 password $2
+}
+
+up(){
+        if [ $# -lt 1 ]; then
+                printf "Usage: $0 -up SSID"
+                exit 1
+        fi
+        nmcli connection up $1
+}
+
+down(){
+        if [ $# -lt 1 ]; then
+                printf "Usage: $0 -down SSID"
+                exit 1
+        fi
+        nmcli connection down $1
+}
+
+case $1 in 
+        -h|--help)
+                printf "Usage: $0 Options args...
+Options:
+-h, --help                      Print this help text and exit
+-l, --list                      List wifi
+-n, --new                       New Create a wifi config and connected
+--up                            Connect wifi from a SSID (Must config exists)
+--down                          Disconnect wifi from a SSID
+"
+            ;;
+        -l|--list) list ;;
+        -n|--new) new $2 $3 ;;
+        --up) up $2 ;;
+        --down) down $2 ;;
+        *) echo "Missing parameters,Please Usage: $0 -h, Show Help" && exit 1 ;;
+esac

@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Require bbswitch optimus-manager
+
+# Switch GPU driver to intel
+intel(){
+        sudo prime-offload && optimus-manager --no-confirm --switch integrated
+}
+
+# Switch GPU driver to nvidia
+nvidia(){
+        sudo prime-offload && optimus-manager --no-confirm --switch nvidia
+}
+
+case $1 in 
+        -h|--help)
+                printf "Usage: $0 Options
+Options:
+-h, --help                      Print this help text and exit
+--intel                         Switch to intel
+--nvidia                        Switch to nvidia
+"
+            ;;
+        --intel) intel ;;
+        --nvidia) nvidia ;;
+        *) echo "Missing parameters,Please Usage: $0 -h, Show Help" && exit 1 ;;
+esac
