@@ -8,6 +8,7 @@ alias mt="mutt"
 alias os="neofetch"
 alias lg="lazygit"
 alias ra="ranger"
+alias wget="wget --hsts-file=${XDG_CACHE_HOME:-$HOME/.cache}/.wget-hsts"
 
 # npm
 alias tbnpm="npm --registry=https://registry.npm.taobao.org"
