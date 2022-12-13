@@ -6,6 +6,13 @@ export GOPATH="$HOME/.local/go"
 export GOBIN="$GOPATH/bin"
 export PATH="$GOBIN:$PATH"
 
+# Rust
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# .Net
+export DOTNET_ROOT=$HOME/dotnet
+export PATH=$PATH:$HOME/dotnet
+
 # Pyenv with github
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 export PYENV_ROOT="$HOME/.pyenv"
