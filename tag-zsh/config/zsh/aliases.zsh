@@ -1,6 +1,10 @@
 # Aliases
 # Use neovim for vim if present.
-command -v nvim >/dev/null && alias vi="nvim" vim="nvim" vimdiff="nvim -d"
+if command -v neovide >/dev/null; then
+  alias vi="neovide" vim="neovide" vimdiff="neovide -d"
+elif command -v nvim >/dev/null; then
+  alias vi="nvim" vim="nvim" vimdiff="nvim -d"
+fi
 
 # main
 alias ls="ls --color -X"
