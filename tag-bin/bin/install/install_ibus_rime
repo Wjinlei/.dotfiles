@@ -1,0 +1,27 @@
+sudo pacman -S ibus ibus-rime librime
+
+cat >> /etc/environment <<EOF
+GTK_IM_MODULE=ibus
+QT_IM_MODULE=ibus
+XMODIFIERS=@im=ibus
+INPUT_METHOD=ibus
+SDL_IM_MODULE=ibus
+GLFW_IM_MODULE=ibus
+EOF
+
+paru -S rime-ice-git # rime配置
+
+ibus-daemon -rxRd # 添加到你的.zshrc或.bashrc
+
+ibus-setup # 需要运行这个，或者点击首选项，arch如果没反应请切换到系统的python或安装python-object包
+
+cat >> $HOME/.config/ibus/rime/default.custom.yaml <<EOF
+patch:
+  # 仅使用「雾凇拼音」的默认配置，配置此行即可
+  __include: rime_ice_suggestion:/
+  __patch:
+    key_binder/bindings/+:
+      # 开启逗号句号翻页
+      - { when: paging, accept: comma, send: Page_Up }
+      - { when: has_menu, accept: period, send: Page_Down }
+EOF

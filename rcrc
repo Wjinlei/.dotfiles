@@ -1,1 +1,2 @@
-EXCLUDES="README.md"
+TAGS="bin dunst mpd mpv git ncmpcpp picom pip ranger tmux X11 yarn zathura zsh mutt"
+EXCLUDES="README.md outdated-or-not-used"

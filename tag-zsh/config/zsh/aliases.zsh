@@ -15,7 +15,7 @@ alias ra="ranger"
 alias wget="wget --hsts-file=${XDG_CACHE_HOME:-$HOME/.cache}/.wget-hsts"
 
 # npm
-alias tbnpm="npm --registry=https://registry.npm.taobao.org"
+alias tbnpm="npm --registry=https://registry.npmmirror.com"
 alias npmil="tbnpm install"
 alias npmul="tbnpm uninstall"
 alias npmll="tbnpm list --depth=0"
