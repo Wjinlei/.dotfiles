@@ -5,11 +5,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Path to your oh-my-zsh installation.
-export ZSH_COMPDUMP=${XDG_CACHE_HOME:-$HOME/.cache}/.zcompdump-${HOST}-${ZSH_VERSION}
-export HISTFILE=${XDG_CACHE_HOME:-$HOME/.cache}/.zsh_history
-export ZSH="$HOME/.oh-my-zsh"
-
 #ZSH_THEME="robbyrussell"
 #ZSH_THEME="ys"
 #ZSH_THEME="random"
@@ -33,11 +28,6 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # start ibus
 ibus-daemon -rxRd

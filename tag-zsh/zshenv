@@ -1,3 +1,8 @@
+# Path to your oh-my-zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
+export ZSH_COMPDUMP=${XDG_CACHE_HOME:-$HOME/.cache}/.zcompdump-${HOST}-${ZSH_VERSION}
+export HISTFILE=${XDG_CACHE_HOME:-$HOME/.cache}/.zsh_history
+
 # Language
 # Golang
 export GO111MODULE=on
@@ -34,7 +39,12 @@ fi
 #    eval "$(jenv init -)"
 #fi
 
+# nvm
+export NVM_DIR="$HOME/.nvm"
 export npm_config_cache=${XDG_CACHE_HOME:-$HOME/.cache}/.npm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 export XAUTHORITY=${XDG_CACHE_HOME:-$HOME/.cache}/.Xauthority
 export LESSHISTFILE=${XDG_CACHE_HOME:-$HOME/.cache}/.lesshst
 
