@@ -28,6 +28,3 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-
-# start ibus
-ibus-daemon -rxRd
