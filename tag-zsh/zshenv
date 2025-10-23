@@ -7,6 +7,7 @@ export ZCOMPDUMP=$XDG_CACHE_HOME/.zcompdump
 export HISTFILE=$XDG_CACHE_HOME/.zsh_history
 export XAUTHORITY=$XDG_CACHE_HOME/.Xauthority
 export LESSHISTFILE=$XDG_CACHE_HOME/.lesshst
+export PYTHONHISTFILE=$XDG_CACHE_HOME/.python_history
 
 # Language
 # Golang
