@@ -19,4 +19,13 @@ require("full-border"):setup {
 }
 
 require("git"):setup()
-require("no-status"):setup()
+
+require("yaziline"):setup({
+  separator_style = "liney", -- "angly" | "curvy" | "liney" | "empty"
+  select_symbol = "",
+  yank_symbol = "󰆐",
+
+  filename_max_length = 24, -- truncate when filename > 24
+  filename_truncate_length = 6, -- leave 6 chars on both sides
+  filename_truncate_separator = "..."
+})

@@ -19,9 +19,9 @@ rev = "c264639"
 hash = "e17c11b605d989568a1d1741ca17c584"
 
 [[plugin.deps]]
-use = "yazi-rs/plugins:no-status"
-rev = "8f1d971"
-hash = "3e023d31f29201efdac2a6ae35fedb78"
+use = "llanosrocas/yaziline"
+rev = "e79b067"
+hash = "f590c5b7d0730e8d6023b1b34ddf7ead"
 
 [flavor]
 deps = []
