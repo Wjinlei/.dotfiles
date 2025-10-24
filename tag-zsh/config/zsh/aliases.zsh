@@ -13,6 +13,9 @@ alias mt="mutt"
 alias os="neofetch"
 alias lg="lazygit"
 alias ra="ranger"
+if command -v yazi >/dev/null; then
+  alias ra="yazi" yz="yazi"
+fi
 
 # npm
 alias mynpm="npm --registry=https://registry.npmmirror.com"
