@@ -10,7 +10,7 @@ fi
 alias wget="wget --hsts-file=${XDG_CACHE_HOME:-$HOME/.cache}/.wget-hsts"
 alias ls="ls --color -X"
 alias mt="mutt"
-alias os="neofetch"
+alias os="fastfetch"
 alias lg="lazygit"
 alias ra="ranger"
 if command -v yazi >/dev/null; then
