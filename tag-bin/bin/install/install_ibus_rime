@@ -1,6 +1,26 @@
-sudo pacman -S ibus ibus-rime librime
+#!/bin/bash
 
-cat >> /etc/environment <<EOF
+# Script to install and configure ibus-rime input method
+# Must be run with root privileges
+
+set -e  # Exit on any error
+
+# Check if running as root
+if [ "$EUID" -ne 0 ]; then
+    echo "Please run this script with root privileges."
+    exit 1
+fi
+
+# Function: Install ibus and related packages
+install_packages() {
+    echo "Installing ibus and related packages..."
+    pacman -S --noconfirm ibus ibus-rime librime
+}
+
+# Function: Add environment variables to /etc/environment
+add_environment_variables() {
+    echo "Adding environment variables to /etc/environment..."
+    cat >> /etc/environment <<EOF
 GTK_IM_MODULE=ibus
 QT_IM_MODULE=ibus
 XMODIFIERS=@im=ibus
@@ -8,20 +28,51 @@ INPUT_METHOD=ibus
 SDL_IM_MODULE=ibus
 GLFW_IM_MODULE=ibus
 EOF
+}
 
-paru -S rime-ice-git # rime配置
+# Function: Install rime configuration
+install_rime_config() {
+    echo "Installing rime configuration..."
+    paru -S --noconfirm rime-ice-git
+}
 
-ibus-daemon -rxRd # 添加到你的.zshrc或.bashrc
+# Function: Start ibus daemon
+start_ibus_daemon() {
+    echo "Starting ibus daemon..."
+    ibus-daemon -rxRd
+}
 
-ibus-setup # 需要运行这个，或者点击首选项，arch如果没反应请切换到系统的python或安装python-object包
+# Function: Configure rime
+configure_rime() {
+    echo "Configuring rime..."
+    # Check and create directory
+    RIME_DIR="$HOME/.config/ibus/rime"
+    if [ ! -d "$RIME_DIR" ]; then
+        mkdir -p "$RIME_DIR"
+    fi
 
-cat >> $HOME/.config/ibus/rime/default.custom.yaml <<EOF
+    cat >> "$HOME/.config/ibus/rime/default.custom.yaml" <<EOF
 patch:
-  # 仅使用「雾凇拼音」的默认配置，配置此行即可
   __include: rime_ice_suggestion:/
   __patch:
     key_binder/bindings/+:
-      # 开启逗号句号翻页
       - { when: paging, accept: comma, send: Page_Up }
       - { when: has_menu, accept: period, send: Page_Down }
 EOF
+}
+
+# Function: Run ibus-setup
+run_ibus_setup() {
+    echo "Running ibus-setup..."
+    ibus-setup
+}
+
+# Main execution flow
+install_packages
+add_environment_variables
+install_rime_config
+start_ibus_daemon
+configure_rime
+run_ibus_setup
+
+echo "Installation and configuration completed!"
