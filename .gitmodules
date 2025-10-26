@@ -2,6 +2,3 @@
 	path = tag-ranger/config/ranger/plugins/ranger_devicons
 	url = https://github.com/alexanderjeurissen/ranger_devicons
 
-[submodule "tag-bin/bin/dwm.script"]
-	path = tag-bin/bin/dwm.script
-	url = https://github.com/Wjinlei/dwm.script
