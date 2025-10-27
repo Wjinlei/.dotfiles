@@ -67,3 +67,7 @@ export RANGER_LOAD_DEFAULT_RC=false
 
 # Wget
 export WGETRC=$HOME/.config/wget/wgetrc
+
+# Fix the issue of MCP inch stop opening white screen:
+# https://github.com/imhuso/cunzhi
+export WEBKIT_DISABLE_DMABUF_RENDERER=1
