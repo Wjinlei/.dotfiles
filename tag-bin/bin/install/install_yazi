@@ -1,0 +1,18 @@
+#!/bin/bash
+
+set -e  # Exit on any error
+
+# Check if running as root
+if [ "$EUID" -ne 0 ]; then
+    echo "Please run this script with root privileges."
+    exit 1
+fi
+
+install_packages() {
+    echo "Installing yazi and related packages..."
+    pacman -S --noconfirm yazi ffmpeg 7zip jq poppler fd ripgrep fzf zoxide resvg imagemagick ueberzugpp trash-cli
+}
+
+install_packages
+
+echo "Installation completed!"
