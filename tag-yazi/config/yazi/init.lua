@@ -31,3 +31,7 @@ require("yaziline"):setup({
 })
 
 require("recycle-bin"):setup()
+
+require("bookmarks"):setup({
+	persist = "all",
+})
