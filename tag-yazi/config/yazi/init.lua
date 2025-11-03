@@ -29,3 +29,5 @@ require("yaziline"):setup({
   filename_truncate_length = 6, -- leave 6 chars on both sides
   filename_truncate_separator = "..."
 })
+
+require("recycle-bin"):setup()
