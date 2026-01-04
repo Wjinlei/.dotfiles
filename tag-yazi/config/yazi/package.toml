@@ -19,11 +19,6 @@ rev = "c264639"
 hash = "e17c11b605d989568a1d1741ca17c584"
 
 [[plugin.deps]]
-use = "llanosrocas/yaziline"
-rev = "e79b067"
-hash = "f590c5b7d0730e8d6023b1b34ddf7ead"
-
-[[plugin.deps]]
 use = "dedukun/bookmarks"
 rev = "9ef1254"
 hash = "92fbb5483657fa7976cdf4e0104e18e0"
@@ -32,6 +27,11 @@ hash = "92fbb5483657fa7976cdf4e0104e18e0"
 use = "uhs-robert/recycle-bin"
 rev = "8bb6286"
 hash = "f8d05a771c1d18c87f5558cbd4ae27fa"
+
+[[plugin.deps]]
+use = "llanosrocas/yaziline"
+rev = "6266926"
+hash = "9917ab5cb9bdbab7ca7f2501f84f0f11"
 
 [flavor]
 deps = []
