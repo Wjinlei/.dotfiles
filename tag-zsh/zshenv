@@ -12,7 +12,8 @@ export PYTHONHISTFILE=$XDG_CACHE_HOME/.python_history
 # Language
 # Golang
 export GO111MODULE=on
-export GOPROXY=https://goproxy.cn,direct
+# export GOPROXY=https://goproxy.cn,direct
+export GOPROXY=https://goproxy.io,direct
 export GOSUMDB=sum.golang.google.cn
 export GOPATH="$HOME/.local/go"
 export GOBIN="$GOPATH/bin"
