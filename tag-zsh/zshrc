@@ -18,6 +18,7 @@ ZSH_THEME="kiwi"
 [ -f ~/.config/zsh/zsh-vi-mode.zsh ] && source ~/.config/zsh/zsh-vi-mode.zsh
 
 plugins=(
+    z
     zsh-vi-mode
     git
     history
